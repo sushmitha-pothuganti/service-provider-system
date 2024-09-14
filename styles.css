@@ -1,0 +1,108 @@
+/* Basic styling for layout */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.menu-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.menu-bar li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.menu-bar a,
+.menu-bar button {
+    padding: 14px 20px;
+    display: inline-block;
+    color: white;
+    background-color: #333;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-bar a:hover,
+.menu-bar button:hover {
+    background-color: #111;
+}
+
+.auth-form {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Centering content */
+.intro {
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.location-section {
+    margin: 20px auto;
+    max-width: 300px;
+}
+
+/* Styling for the categories section */
+.categories {
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+.category-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.category-item {
+    width: 40%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.category-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.category-item h4 {
+    margin: 10px 0 5px;
+}
+
+.category-item p {
+    font-size: 14px;
+    color: #555;
+}
+

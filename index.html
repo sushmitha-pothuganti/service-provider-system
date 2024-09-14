@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Service and Grocery Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to QuickService</h1>
+        <p>Your one-stop solution for home services and groceries</p>
+    </header>
+
+    <!-- Menu Bar -->
+    <nav>
+        <ul class="menu-bar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><button id="sign-up-btn">Sign Up</button></li>
+            <li><button id="login-btn">Login</button></li>
+        </ul>
+    </nav>
+
+    <!-- Sign-Up/Login Panel -->
+    <aside id="auth-panel" class="hidden">
+        <div id="sign-up-form" class="auth-form hidden">
+            <h3>Sign Up</h3>
+            <form>
+                <label for="signup-email-phone">Email or Phone Number:</label>
+                <input type="text" id="signup-email-phone" required>
+
+                <label for="signup-password">Create Password:</label>
+                <input type="password" id="signup-password" required>
+
+                <label for="signup-confirm-password">Confirm Password:</label>
+                <input type="password" id="signup-confirm-password" required>
+
+                <label for="user-type-signup">I am a:</label>
+                <select id="user-type-signup">
+                    <option value="customer">Customer</option>
+                    <option value="provider">Service Provider</option>
+                </select>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+
+        <div id="login-form" class="auth-form hidden">
+            <h3>Login</h3>
+            <form>
+                <label for="login-email">Email or Phone Number:</label>
+                <input type="text" id="login-email" required>
+
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </aside>
+
+    <!-- Main Section -->
+    <main>
+        <section class="intro">
+            <h2>What do you need today?</h2>
+            <p>Select from a range of services and groceries delivered to your doorstep!</p>
+        </section>
+
+        <!-- New Location Section -->
+        <section class="location-section">
+            <label for="location-select">Select Your Location:</label>
+            <select id="location-select">
+                <option value="">Choose your location</option>
+                <option value="new-york">New York</option>
+                <option value="los-angeles">Los Angeles</option>
+                <option value="chicago">Chicago</option>
+                <option value="houston">Houston</option>
+            </select>
+        </section>
+
+        <section class="categories">
+            <h3>Categories</h3>
+            <div class="category-list">
+                <div class="category-item" id="services">
+                    <img src="images/services.png" alt="Services">
+                    <h4>Home Services</h4>
+                    <p>Electricians, Plumbers, Cleaners, and more.</p>
+                </div>
+                <div class="category-item" id="groceries">
+                    <img src="images/groceries.png" alt="Groceries">
+                    <h4>Groceries</h4>
+                    <p>Fresh vegetables, fruits, and daily needs.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 QuickService. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
