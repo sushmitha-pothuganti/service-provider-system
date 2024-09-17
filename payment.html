@@ -1,4 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - QuickService</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>QuickService - Payment</h1>
+    </header>
+
+    <!-- Payment Section -->
+    <main>
+        <section class="payment-section">
+            <h2>Select Payment Method</h2>
+
+            <div class="payment-methods">
+                <div class="payment-option">
+                    <input type="radio" name="payment-method" id="gpay" value="GPay">
+                    <label for="gpay">
+                        <img src="gpay-logo.png" alt="GPay Logo"> Google Pay
+                    </label>
+                </div>
+
+                <div class="payment-option">
+                    <input type="radio" name="payment-method" id="phonepe" value="PhonePe">
+                    <label for="phonepe">
+                        <img src="phonepe-logo.png" alt="PhonePe Logo"> PhonePe
+                    </label>
+                </div>
+
+                <div class="payment-option">
+                    <input type="radio" name="payment-method" id="paytm" value="Paytm">
+                    <label for="paytm">
+                        <img src="paytm-logo.png" alt="Paytm Logo"> Paytm
+                    </label>
+                </div>
+
+                <div class="payment-option">
+                    <input type="radio" name="payment-method" id="cod" value="COD">
+                    <label for="cod">
+                        <img src="cash-logo.png" alt="Cash Logo"> Cash on Delivery
+                    </label>
+                </div>
+
+                <div class="payment-option">
+                    <input type="radio" name="payment-method" id="credit-card" value="CreditCard">
+                    <label for="credit-card">
+                        <img src="creditcard-logo.png" alt="Credit Card Logo"> Credit Card
+                    </label>
+                </div>
+            </div>
+
+            <!-- Credit Card Details -->
+            <div id="credit-card-form" class="card-form">
+                <form id="payment-form">
+                    <label for="cardholder-name">Cardholder Name:</label>
+                    <input type="text" id="cardholder-name" placeholder="Enter your full name" required>
+
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" placeholder="xxxx-xxxx-xxxx-xxxx" maxlength="19" required>
+
+                    <div class="card-details">
+                        <label for="expiry-date">Expiry Date:</label>
+                        <input type="text" id="expiry-date" placeholder="MM/YY" maxlength="5" required>
+
+                        <label for="cvv">CVV:</label>
+                        <input type="text" id="cvv" placeholder="xxx" maxlength="3" required>
+                    </div>
+
+                    <button type="submit">Pay Now</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 QuickService. All rights reserved.</p>
+    </footer>
+
+    <script src="payment.js"></script>
+</body>
+</html>
+

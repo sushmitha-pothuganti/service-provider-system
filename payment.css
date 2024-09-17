@@ -1,85 +1,102 @@
+/* General Styling for the Body */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #f4f4f4;
 }
 
+/* Header Styling */
 header {
-    background-color: #28a745;
-    padding: 20px 0;
+    background-color: #4CAF50;
     color: white;
+    padding: 1em;
     text-align: center;
 }
 
-.menu-bar {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    background: #333;
-    padding: 10px 0;
+h1 {
+    font-size: 2em;
+    margin: 0;
 }
 
-.menu-bar li {
-    margin: 0 20px;
-}
-
-.menu-bar li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-}
-
+/* Payment Section Styling */
 .payment-section {
-    margin: 50px auto;
     max-width: 500px;
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-section h2 {
     text-align: center;
+    color: #333;
+    font-size: 1.5em;
 }
 
-h2 {
-    margin-bottom: 20px;
+.payment-methods {
+    display: flex;
+    flex-direction: column;
 }
 
-.form-group {
-    margin-bottom: 20px;
+.payment-option {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
+.payment-option img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
 }
 
-input[type="text"], input[type="number"] {
-    width: 100%;
+/* Card Form Styling */
+.card-form {
+    display: none;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.card-form label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-form input {
+    margin: 10px 0;
     padding: 10px;
-    border-radius: 5px;
+    font-size: 16px;
     border: 1px solid #ccc;
-    font-size: 16px;
+    border-radius: 4px;
+    width: 100%;
 }
 
-.cta-button {
-    background-color: #28a745;
+.card-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-details input {
+    width: 48%;
+}
+
+.card-form input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.card-form button {
+    background-color: #4CAF50;
     color: white;
-    padding: 10px 20px;
+    padding: 10px;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    font-size: 16px;
 }
 
-.cta-button:hover {
-    background-color: #1e7d32;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 30px;
+.card-form button:hover {
+    background-color: #45a049;
 }
